@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Svg Night</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewbox="0 0 1500 750">
+
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="80%">
+      <stop offset="0%" style="stop-color:#000 ;stop-opacity:1" />
+      <stop offset="100%" style="stop-color: #103 ;stop-opacity:1" />
+    </linearGradient>
+
+    <radialGradient id="stars" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#fff; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fff ;stop-opacity:0" />
+    </radialGradient>
+
+    <radialGradient id="Smoke" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#aaa; stop-opacity: 0.75" />
+      <stop offset="100%" style="stop-color:#555 ;stop-opacity:0" />
+    </radialGradient>
+
+  </defs>
+  <rect class="background" x="0" y="0" />
+
+  <g class="stars">
+    
+    <symbol id="starSymbol" >
+      <g class="starCont">
+        <path d="M 30 0
+                 l 1 30
+                 l 30 1
+                 l -30 1
+                 l -1 30
+                 l -1 -30
+                 l -30 -1
+                 l 30 -1
+                 z"/>
+      </g>
+    </symbol>
+
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>
+    <use class="star" xlink:href="#starSymbol"/>  
+  </g>
+ 
+  <g class="shootingStarCont">
+        
+    <circle class="starTrail" cx="750" cy="125" r="1" />
+    <circle class="starTrail" cx="750" cy="130" r="2" />
+    <circle class="starTrail" cx="750" cy="126" r="1" />
+    <circle class="starTrail" cx="750" cy="125" r="2" />
+    <circle class="starTrail" cx="750" cy="130" r="1" />
+    <circle class="starTrail" cx="750" cy="128" r="2" />
+    <circle class="starTrail" cx="750" cy="125" r="1" />
+    <circle class="starTrail" cx="750" cy="130" r="2" />
+    <circle class="starTrail" cx="750" cy="130" r="1" />
+    <circle class="starTrail" cx="750" cy="127" r="2" />
+    <circle class="starTrail" cx="750" cy="130" r="1" />
+    <circle class="starTrail" cx="750" cy="129" r="2" />
+    <circle class="starTrail" cx="750" cy="128" r="1" />
+    <circle class="starTrail" cx="750" cy="132" r="2" />
+    <circle class="starTrail" cx="750" cy="131" r="1" />
+    <circle class="starTrail" cx="750" cy="133" r="2" />
+    <circle class="starTrail" cx="750" cy="129" r="1" />
+    <circle class="starTrail" cx="750" cy="134" r="2" />
+    <circle class="starTrail" cx="750" cy="131" r="1" />
+    <circle class="starTrail" cx="750" cy="130" r="2" />
+    <circle class="starTrail" cx="750" cy="129" r="1" />
+    <circle class="starTrail" cx="750" cy="125" r="2" />
+
+    <circle class="shootingStar" cx="750" cy="130" r="2" />
+  </g>
+ 
+  <g class="trees">
+    
+    <symbol id="treeSymbol" >
+      <path d="M 100 0 
+            l 10 10 h -5
+            l 10 15 h -5
+            l 10 20 h -5
+            l 10 25 h -5
+            l 10 30
+            l -20 -3
+            v 150 h -20 v -150
+            l -20 3
+            l 10 -30
+            h -5 l 10 -25
+            h -5 l 10 -20
+            h -5 l 10 -15
+            h -5 l 10 -10
+            "/>
+    </symbol>
+
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    <use class="tree" xlink:href="#treeSymbol"/>
+    
+  </g>
+  
+  <g class="">
+    
+    <path class="ground" d="M 0 600
+                            c 500 100 1000 -100 1500 0
+                            V 750 H 0
+                            z "/>
+    
+    <ellipse class="rock" cx="798" cy="651" rx="3" ry="2" />
+    <ellipse class="rock" cx="805" cy="652" rx="6" ry="4" />
+    <ellipse class="rock" cx="815" cy="655" rx="8" ry="6" />
+    <ellipse class="rock" cx="825" cy="659" rx="10" ry="8" />
+    <ellipse class="rock" cx="702" cy="651" rx="3" ry="2" />
+    <ellipse class="rock" cx="695" cy="652" rx="6" ry="4" />
+    <ellipse class="rock" cx="685" cy="655" rx="8" ry="6" />
+    <ellipse class="rock" cx="675" cy="659" rx="10" ry="8" />
+    
+    <circle class="smokeBack" cx="750" cy="650" r="125" fill="url(#Smoke)"/>
+
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+    <circle class="smoke" r="85" fill="url(#Smoke)"/>
+
+    <path class="flame" d="M 751 680 C 734 650 750 600 724 420" />
+    <path class="flame" d="M 791 680 C 851 650 750 600 755 420" />
+    <path class="flame" d="M 773 680 C 691 650 750 600 755 420" />
+    <path class="flame" d="M 725 680 C 730 650 750 600 765 420" />
+    <path class="flame" d="M 716 680 C 847 650 750 600 736 420" />
+    <path class="flame" d="M 714 680 C 817 650 750 600 723 420" />
+    <path class="flame" d="M 770 680 C 760 650 750 600 738 420" />
+    <path class="flame" d="M 716 680 C 828 650 750 600 741 420" />
+    <path class="flame" d="M 743 680 C 698 650 750 600 733 420" />
+    <path class="flame" d="M 722 680 C 807 650 750 600 766 420" />
+    <path class="flame" d="M 791 680 C 696 650 750 600 764 420" />
+    <path class="flame" d="M 732 680 C 707 650 750 600 761 420" />
+    <path class="flame" d="M 796 680 C 836 650 750 600 729 420" />
+    <path class="flame" d="M 704 680 C 857 650 750 600 723 420" />
+    <path class="flame" d="M 789 680 C 680 650 750 600 738 420" />
+    <path class="flame" d="M 706 680 C 827 650 750 600 761 420" />
+    <path class="flame" d="M 718 680 C 776 650 750 600 744 420" />
+    <path class="flame" d="M 799 680 C 763 650 750 600 747 420" />
+    <path class="flame" d="M 754 680 C 673 650 750 600 779 420" />
+    <path class="flame" d="M 752 680 C 667 650 750 600 761 420" />
+    <path class="flame" d="M 712 680 C 709 650 750 600 720 420" />
+    <path class="flame" d="M 759 680 C 847 650 750 600 766 420" />
+    <path class="flame" d="M 783 680 C 727 650 750 600 726 420" />
+    <path class="flame" d="M 709 680 C 838 650 750 600 758 420" />
+    <path class="flame" d="M 721 680 C 854 650 750 600 774 420" />
+    <path class="flame" d="M 705 680 C 658 650 750 600 753 420" />
+    <path class="flame" d="M 765 680 C 664 650 750 600 752 420" />
+    <path class="flame" d="M 747 680 C 714 650 750 600 779 420" />
+    <path class="flame" d="M 759 680 C 731 650 750 600 735 420" />
+    <path class="flame" d="M 710 680 C 822 650 750 600 752 420" />
+    <path class="flame" d="M 701 680 C 680 650 750 600 768 420" />    
+    
+    <ellipse class="rock" cx="835" cy="667" rx="12" ry="10" />
+    <ellipse class="rock" cx="825" cy="679" rx="14" ry="12" />
+    <ellipse class="rock" cx="805" cy="691" rx="16" ry="13" />
+    <ellipse class="rock" cx="780" cy="697" rx="18" ry="14" />
+    <ellipse class="rock" cx="665" cy="667" rx="12" ry="10" />
+    <ellipse class="rock" cx="675" cy="679" rx="14" ry="12" />
+    <ellipse class="rock" cx="695" cy="691" rx="16" ry="13" />
+    <ellipse class="rock" cx="720" cy="697" rx="18" ry="14" />   
+    <ellipse class="rock" cx="750" cy="700" rx="20" ry="15" />
+  </g>
+  
+  <g class="tent">
+    
+    <path class="tentBri" d="M 1000 650
+                             q 20 -100 160 -200
+                             q 40 100 30 240
+                             q -100 -40 -190 -40
+                             z" />
+    
+    <path class="tentMid" d="M 1190 690
+                             q 50 -30 130 -40
+                             q -40 -120 -160 -200
+                             q 40 100 30 240
+                             v -100
+                             " />
+
+    <path class="tentMid" d="M 1000 650
+                             l -20 40
+                             q 100 0 200 40
+                             l 10 -40
+                             q -100 -40 -190 -40
+                             " />
+
+    <path class="tentDar" d="M 1190 690
+                             l -10 40
+                             q 80 -50 160 -60
+                             l -20 -20
+                             q -80 10 -130 40
+                             " />
+    
+    <path class="tentStick" d="M 988 685
+                             l 3 -3
+                             l -5 -20
+                             l -13 8
+                             l 15 15
+                             M 1175 725
+                             l 3 -3
+                             l -5 -20
+                             l -13 8
+                             l 15 15
+                             M 1328 670
+                             l -3 -3
+                             l 5 -20
+                             l 13 8
+                             l -15 15                             
+                             " />
+
+    <path class="tentDar" d="M 1130 530
+                             q -80 30 -100 110
+                             q 70 0 140 30
+                             q 0 -110 -40 -140
+                             " />
+    
+    <path class="tentMid" d="M 1130 530
+                             q -80 30 -100 110
+                             l 70 -0
+                             " />
+    
+    <path class="tentMid" d="M 1170 670
+                             q 0 -110 -40 -140
+                             l -25 110
+                             " />
+  </g>
+    
+  <g class="">
+  
+    <path class="branch" d="M 0 300
+                            l 100 -10
+                            l 120 20
+                            l 140 -10
+                            l 80 20
+                            l -100 -10
+                            l -120 20
+                            l -100 -10
+                            l -120 20
+                            "/>
+    <path class="branch" d="M 300 310
+                            l 50 30
+                            l -30 -30
+                            "/>
+    <path class="branch" d="M 370 310
+                            l 50 -30
+                            l -30 30
+                            "/>
+    
+    <path class="owlBody" d="M 250 310
+                             c 100 0 50 -100 25 -100
+                             c 20 0 20 -30 0 -60
+                             l -10 15
+                             c 0 -6 -30 -6 -30 0
+                             l -10 -15
+                             c -20 30 -20 60 0 60
+                             c -25 0 -75 100 25 100 
+                             "/>
+    
+    <path class="owlSmile" d="M 210 250 c 0 10 20 10 20 0  c 0 5 -20 5 -20 0"/>
+    <path class="owlSmile" d="M 240 250 c 0 10 20 10 20 0  c 0 5 -20 5 -20 0"/>
+    <path class="owlSmile" d="M 270 250 c 0 10 20 10 20 0  c 0 5 -20 5 -20 0"/>
+    <path class="owlSmile" d="M 225 270 c 0 10 20 10 20 0  c 0 5 -20 5 -20 0"/>
+    <path class="owlSmile" d="M 255 270 c 0 10 20 10 20 0  c 0 5 -20 5 -20 0"/>
+    
+    <path class="owlWingR" d="M 275 210
+                             c 20 0 25 20 30 60
+                             c 0 20 -20 20 -20 -5
+                             c 0 20 -15 20 -15 -5
+                             c 0 20 -10 20 -10 -5
+                             c 0 -20 5 -45 20 -45
+                             "/>
+
+    <path class="owlWingL" d="M 225 210
+                             c -20 0 -25 20 -30 60
+                             c 0 20 20 20 20 -5
+                             c 0 20 15 20 15 -5
+                             c 0 20 10 20 10 -5
+                             c 0 20 5 -45 -20 -45
+                             "/>
+
+    <ellipse class="owlEye" cx="235" cy="190" rx="16" ry="16" />
+    <ellipse class="owlEye" cx="265" cy="190" rx="16" ry="16" />
+
+    <ellipse class="owlEyeB" cx="235" cy="190" rx="8" />
+    <ellipse class="owlEyeB" cx="265" cy="190" rx="8" />
+
+    <path class="owlBeak" d="M 240 202
+                             c 0 -5 20 -5 20 0
+                             q -10 5 -10 10
+                             q 0 -5 -10 -10
+                             z" />
+
+    <ellipse class="owlLeg" cx="240" cy="312" rx="5" ry="10" />
+    <ellipse class="owlLeg" cx="230" cy="312" rx="5" ry="10" />
+    <ellipse class="owlLeg" cx="220" cy="310" rx="5" ry="10" />
+
+    <ellipse class="owlLeg" cx="260" cy="312" rx="5" ry="10" />
+    <ellipse class="owlLeg" cx="270" cy="312" rx="5" ry="10" />
+    <ellipse class="owlLeg" cx="280" cy="310" rx="5" ry="10" />
+
+  </g>
+  
+</svg>
+<!-- partial -->
+  
+</body>
+</html>
